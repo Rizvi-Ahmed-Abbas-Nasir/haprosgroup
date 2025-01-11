@@ -5716,11 +5716,16 @@ ul {
   position: relative;
   display: block;
   background-color: #418e7f;
-  margin-top: -92px;
+  margin-top: 2rem;
   z-index: 1;
   overflow: hidden;
 }
 
+.new-site-footer{
+  margin-top: -7rem;
+
+  
+}
 .container1 {
   width: 100%;
   height: 50%;
