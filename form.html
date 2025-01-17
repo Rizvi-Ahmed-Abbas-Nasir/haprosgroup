@@ -185,31 +185,31 @@
         <div style="padding-top: 5rem;" class="review-form-one__inner">
           <h3 class="review-form-one__title">Form</h3>
           <div class="review-form-one__rate-box"></div>
-          <form action="assets/inc/sendemail.php" class="review-form-one__form contact-form-validated"
+          <form id="product-form" class="review-form-one__form contact-form-validated"
             novalidate="novalidate">
             <div class="row">
               <div class="col-xl-6 col-lg-6">
                 <div class="review-form-one__input-box text-box">
-                  <input type="text" placeholder="Your name" class="text-box" name="name" />
+                  <input  type="text" placeholder="Your name" class="text-box" id="name" name="name" />
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6">
                 <div class="review-form-one__input-box">
-                  <input type="email" placeholder="Email address" name="email" />
+                  <input type="email" id="email" placeholder="Email address" name="email" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="">
                 <div class="review-form-one__input-box text-box">
-                  <input type="text" placeholder="Your number" class="text-box" name="name" />
+                  <input type="text" placeholder="Your number" id="phone" class="text-box" name="phone" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-xl-12">
                 <div class="review-form-one__input-box text-message-box">
-                  <textarea name="message" placeholder="Write a comment"></textarea>
+                  <textarea name="desc" id="desc" placeholder="Write a comment"></textarea>
                 </div>
               </div>
             </div>
@@ -286,6 +286,8 @@
                   + Moth Bean (Matki)
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <div class="REQ-section">
@@ -331,6 +333,8 @@
                   + Carrom Seeds
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <!-- Whole Spices Section -->
@@ -386,6 +390,8 @@
                   + Carrom Seeds
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <!-- Rice Section -->
@@ -432,6 +438,8 @@
                   + Rice Flour
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
             <!-- Dried Fruits Section -->
             <div class="REQ-section">
@@ -447,6 +455,8 @@
                   + Cashews broken
                 </button>
                 </div>
+                <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <!-- Oilseeds Section -->
@@ -478,6 +488,8 @@
                   + Mustard Seeds
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <div class="REQ-section">
@@ -505,6 +517,8 @@
                   + Ashwagandha Root Powder
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <div class="REQ-section">
@@ -526,6 +540,8 @@
                   +Fox Nut
                 </button>
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <div class="REQ-section">
@@ -540,6 +556,8 @@
                 </button>
                 
               </div>
+              <input type="hidden" id="selectedItemsInput" name="selectedItems" />
+
             </div>
 
             <div class="row">
@@ -556,30 +574,33 @@
     </section>
     <!--End Review Form-->
 
-    <!--Site Footer Start-->
-    <footer class="site-footer" style="overflow: hidden">
+    <footer class="site-footer new-site-footer" style="overflow: hidden">
       <div class="site-footer__bg" style="
-            background-image: url(assets/images/backgrounds/site-footer-bg-img.png);
-          "></div>
+                background-image: url(assets/images/backgrounds/site-footer-bg-img.png);
+              "></div>
       <div class="container1">
         <div class="site-footer__top">
           <div class="rowFooter">
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-              <div class="footer-widget__column footer-widget__about">
-                <div class="footer-widget__logo">
-                  <a href="index.html"><img src="assets/images/logo/hapros_logo.png" alt="" /></a>
+            <div class="col-xl-3 col-lg-6  col-md-6 wow fadeInUp" data-wow-delay="100ms">
+              <div class="footer-widget__column footer-widget__about LeftFooter">
+                <div class="footer-widget__logo ">
+                  <a href="index.html"><img src="assets/images/Hapros white and yellow.png" alt="" /></a>
                 </div>
+               
                 <div class="footer-widget__about-text-box">
                   <p class="footer-widget__about-text">
-                    Hapros By Trusenia <br />
+                    Hapros By TRUSENCIA <br />
 
                   </p>
                 </div>
+                <div class="FooterPara">   
+                  <p style="color: white;">At Hapros Global, we offer an extensive range of high-quality conventional, IPM & Organic food and food ingredients.
+                    From bulk shipments to custom orders, our reliable delivery ensures you receive the products you need, right on time.</p>
+   </div>
                 <div class="footer-widget__social-box">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/company/hapros-global/about/" class="fab fa-linkedin"></a>
                 </div>
               </div>
             </div>
@@ -591,18 +612,20 @@
                 </div>
                 <div class="footer-widget__explore-list-box">
                   <ul class="footer-widget__explore-list list-unstyled">
-                    <li><a href="./pages/products/beans-pulses.html">BEANS & PULSES</a></li>
-                    <li><a href="./pages/products/CEREALS-FLOUR.html">CEREALS & FLOUR</a></li>
-                    <li><a href="./pages/products/SPICES.html">SPICES
+                    <li><a href="./pages/products/beans-pulses.html">Beans & Pulses</li>
+                    <li><a href="./pages/products/CEREALS-FLOUR.html">Cereals & Flour</a></li>
+                    <li><a href="./pages/products/SPICES.html">spices
 
                       </a></li>
-                    <li><a href="./pages/products/RICE.html">RICE
-                    <li><a href="./pages/products/OILSEEDS.html">OILSEEDS</a></li>
-                    <li><a href="./pages/products/HERBS.html">HERBS</a></li>
-                    <li><a href="./pages/products/SUPERFOODS.html">SUPERFOODS
+                    <li><a href="./pages/products/RICE.html">Rice
+                      <li><a href="./pages/products/DRIED-FRUITS.html">Dride Fruits
+
+                    <li><a href="./pages/products/OILSEEDS.html">Oilseed</a></li>
+                    <li><a href="./pages/products/HERBS.html">Herbs</a></li>
+                    <li><a href="./pages/products/SUPERFOODS.html">Superfood
 
                       </a></li>
-                    <li><a href="./pages/products/SWEETNERS.html">SWEETNERS
+                    <li><a href="./pages/products/SWEETNERS.html">Sweetners
 
                       </a></li>
                     <!-- <li><a href="products.html">New Products</a></li> -->
@@ -655,16 +678,16 @@
             <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
               <div class="footer-widget__column footer-widget__contact">
                 <div class="footer-widget__title-box">
-                  <h3 class="footer-widget__title">CONTACT US TODAY</h3>
+                  <h3 class="footer-widget__title">CONTACT US</h3>
                 </div>
                 <p class="footer-widget__contact-text">
-                  Valentin, Street Road 24, New York, USA - 67452
+               APMC Market 2, Phase 2, Turbhe, Navi Mumbai - 400705.
                 </p>
                 <ul class="list-unstyled footer-widget__contact-list">
                   <li>
                     <div class="text">
                       <p>
-                        <a href="tel:928800688960">🇹🇷 +90 216 326 36 77</a>
+                        <a href="tel:928800688960">+91 7738862852</a>
                       </p>
 
                     </div>
@@ -672,7 +695,7 @@
                   <li>
                     <div class="text">
                       <p>
-                        <a href="mailto:info@example.com ">info@example.com</a>
+                        <a href="mailto:info@example.com "> india.info@haprosgroup.com</a>
                       </p>
                     </div>
                   </li>
@@ -810,8 +833,80 @@
   <script src="assets/vendors/circleType/jquery.circleType.js"></script>
   <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
   <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script>
+let customButtons = document.querySelectorAll('.REQ-custom-button');
+const selectedItemsInput = document.getElementById('selected-items');
+let selectedItems = []; // Use let to allow reassignments
 
-  <!-- template js -->
+customButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const value = button.getAttribute('data-value');
+
+    // Check if the value is already selected
+    const isAlreadySelected = selectedItems.includes(value);
+
+    if (!isAlreadySelected) {
+      selectedItems.push(value); // Add only the value
+      console.log(`Added: ${value}`);
+    } else {
+      // Remove the value
+      selectedItems = selectedItems.filter((item) => item !== value);
+      console.log(`Removed: ${value}`);
+    }
+
+    // Update the input with the selected values as a JSON string
+    selectedItemsInput.value = JSON.stringify(selectedItems);
+  });
+});
+
+
+  
+    document.getElementById('product-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const description= document.getElementById('desc').value;
+          const items = JSON.stringify(selectedItems);
+
+          const formData = {
+            name,
+            email,
+            phone,
+            description,
+            items,
+          };
+  
+     
+      console.log('Sending JSON Data:', formData);
+  
+      try {
+        const response = await fetch('https://haprosgroup-backend.vercel.app/sendContactForm', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        if (response.ok) {
+          alert('Email sent successfully!');
+          document.getElementById('product-form').reset();
+        selectedItems = [];
+        location.reload();
+
+          
+        } else {
+          alert('Failed to send email.');
+        }
+      } catch (error) {
+        console.error('Error sending email:', error);
+        alert('Error sending email. Check console for details.');
+      }
+    });
+  </script>
+
   <script src="assets/js/ogenix.js"></script>
 </body>
 
