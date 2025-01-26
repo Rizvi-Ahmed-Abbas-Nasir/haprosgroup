@@ -97,8 +97,29 @@
     <div class="custom-cursor__cursor-two"></div>
 
     <div class="preloader">
-      <div class="preloader__image"></div>
+      <div class="txt-loading">
+        <div class="spinner"></div>
+
+        <style>
+        .spinner {
+           width: 56px;
+           height: 56px;
+           border-radius: 50%;
+           background: radial-gradient(farthest-side,rgb(3, 228, 3) 94%,#0000) top/9px 9px no-repeat,
+                  conic-gradient(#0000 30%,rgb(3, 228, 3));
+           -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+           animation: spinner-c7wet2 1s infinite linear;
+        }
+        
+        @keyframes spinner-c7wet2 {
+           100% {
+              transform: rotate(1turn);
+           }
+        }
+        </style>
+   
     </div>
+  </div>
     <!-- /.preloader -->
 
     <div class="page-wrapper">
@@ -455,164 +476,149 @@
           </div>
         </div>
       </section>
-      <footer class="site-footer new-site-footer" style="overflow: hidden">
-        <div class="site-footer__bg" style="
-                  background-image: url(assets/images/backgrounds/site-footer-bg-img.png);
-                "></div>
-        <div class="container1">
-          <div class="site-footer__top">
-            <div class="rowFooter">
-              <div class="col-xl-3 col-lg-6  col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                <div class="footer-widget__column footer-widget__about LeftFooter">
-                  <div class="footer-widget__logo ">
-                    <a href="index.html"><img src="assets/images/Hapros white and yellow.png" alt="" /></a>
-                  </div>
-                 
-                  <div class="footer-widget__about-text-box">
-                    <p class="footer-widget__about-text">
-                      Hapros By TRUSENCIA <br />
-  
-                    </p>
-                  </div>
-                  <div class="FooterPara">   
-                    <p style="color: white;">At Hapros Global, we offer an extensive range of high-quality conventional, IPM & Organic food and food ingredients.
-                      From bulk shipments to custom orders, our reliable delivery ensures you receive the products you need, right on time.</p>
-     </div>
-                  <div class="footer-widget__social-box">
-                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/company/hapros-global/about/" class="fab fa-linkedin"></a>
-                  </div>
+    <!--Site Footer Start-->
+    <footer class="site-footer new-site-footer" style="overflow: hidden">
+      <div class="site-footer__bg" style="
+                background-image: url(assets/images/backgrounds/site-footer-bg-img.png);
+              "></div>
+      <div class="container1">
+        <div class="site-footer__top">
+          <div class="rowFooter">
+            <div class="col-xl-3 col-lg-6  col-md-6 wow fadeInUp" data-wow-delay="100ms">
+              <div class="footer-widget__column footer-widget__about LeftFooter">
+                <div class="footer-widget__logo ">
+                  <a href="index.html"><img src="assets/images/Hapros white and yellow.png" alt="" /></a>
                 </div>
-              </div>
-  
-              <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                <div class="footer-widget__column footer-widget__explore">
-                  <div class="footer-widget__title-box">
-                    <h3 class="footer-widget__title">OUR PRODUCTS</h3>
-                  </div>
-                  <div class="footer-widget__explore-list-box">
-                    <ul class="footer-widget__explore-list list-unstyled">
-                      <li><a href="./pages/products/beans-pulses.html">Beans & Pulses</li>
-                      <li><a href="./pages/products/CEREALS-FLOUR.html">Cereals & Flour</a></li>
-                      <li><a href="./pages/products/SPICES.html">spices
-  
-                        </a></li>
-                      <li><a href="./pages/products/RICE.html">Rice
-                        <li><a href="./pages/products/DRIED-FRUITS.html">Dride Fruits
-  
-                      <li><a href="./pages/products/OILSEEDS.html">Oilseed</a></li>
-                      <li><a href="./pages/products/HERBS.html">Herbs</a></li>
-                      <li><a href="./pages/products/SUPERFOODS.html">Superfood
-  
-                        </a></li>
-                      <li><a href="./pages/products/SWEETNERS.html">Sweetners
-  
-                        </a></li>
-                      <!-- <li><a href="products.html">New Products</a></li> -->
-                    </ul>
-                  </div>
-                </div>
-  
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                <div class="footer-widget__column footer-widget__explore">
-                  <div class="footer-widget__title-box">
-                    <h3 class="footer-widget__title">QUALITY & TERMS</h3>
-                  </div>
-                  <div class="footer-widget__explore-list-box">
-                    <ul class="footer-widget__explore-list list-unstyled">
-                      <li><a href="about.html">Quality</a></li>
-                      <li><a href="services.html">Certificates</a></li>
-                      <li><a href="pricing.html">Terms & Conditions</a></li>
-                      <!-- <li><a href="products.html">New Products</a></li> -->
-                      <li><a href="contact.html">Statements & Policies</a></li>
-                    </ul>
-                  </div>
-                </div>
-  
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                <div class="footer-widget__column footer-widget__explore">
-                  <div class="footer-widget__title-box">
-                    <h3 class="footer-widget__title">ABOUT US</h3>
-                  </div>
-                  <div class="footer-widget__explore-list-box">
-                    <ul class="footer-widget__explore-list list-unstyled">
-                      <li><a href="about.html">Who We Are
-  
-                        </a></li>
-                      <li><a href="about.html">Why Choose Haprops?</a></li>
-                      <li><a href="about.html">Our Promise
-  
-                        </a></li>
-                      <!-- <li><a href="products.html">New Products</a></li> -->
-                      <li><a href="contact.html">Careers
-  
-                        </a></li>
-                    </ul>
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                <div class="footer-widget__column footer-widget__contact">
-                  <div class="footer-widget__title-box">
-                    <h3 class="footer-widget__title">CONTACT US</h3>
-                  </div>
-                  <p class="footer-widget__contact-text">
-                 APMC Market 2, Phase 2, Turbhe, Navi Mumbai - 400705.
+               
+                <div class="footer-widget__about-text-box">
+                  <p class="footer-widget__about-text">
+                    Hapros By TRUSENCIA <br />
+
                   </p>
-                  <ul class="list-unstyled footer-widget__contact-list">
-                    <li>
-                      <div class="text">
-                        <p>
-                          <a href="tel:928800688960">+91 7738862852</a>
-                        </p>
-  
-                      </div>
-                    </li>
-                    <li>
-                      <div class="text">
-                        <p>
-                          <a href="mailto:info@example.com "> india.info@haprosgroup.com</a>
-                        </p>
-                      </div>
-                    </li>
+                </div>
+                <div class="FooterPara">   
+                  <p style="color: white;">At Hapros Global, we offer an extensive range of high-quality conventional, IPM & Organic food and food ingredients.
+                    From bulk shipments to custom orders, our reliable delivery ensures you receive the products you need, right on time.</p>
+   </div>
+                <div class="footer-widget__social-box">
+                  <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/company/hapros-global/about/" class="fab fa-linkedin"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+              <div class="footer-widget__column footer-widget__explore">
+                <div class="footer-widget__title-box">
+                  <h3 class="footer-widget__title">OUR PRODUCTS</h3>
+                </div>
+                <div class="footer-widget__explore-list-box">
+                  <ul class="footer-widget__explore-list list-unstyled">
+                    <li><a href="./pages/products/beans-pulses.html">Beans & Pulses</li>
+                    <li><a href="./pages/products/CEREALS-FLOUR.html">Cereals & Flour</a></li>
+                    <li><a href="./pages/products/SPICES.html">spices
+
+                      </a></li>
+                    <li><a href="./pages/products/RICE.html">Rice
+                      <li><a href="./pages/products/DRIED-FRUITS.html">Dride Fruits
+
+                    <li><a href="./pages/products/OILSEEDS.html">Oilseed</a></li>
+                    <li><a href="./pages/products/HERBS.html">Herbs</a></li>
+                    <li><a href="./pages/products/SUPERFOODS.html">Superfood
+
+                      </a></li>
+                    <li><a href="./pages/products/SWEETNERS.html">Sweetners
+
+                      </a></li>
+                    <!-- <li><a href="products.html">New Products</a></li> -->
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          
+            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+              <div class="footer-widget__column footer-widget__explore">
+                <div class="footer-widget__title-box">
+                  <h3 class="footer-widget__title">ABOUT US</h3>
+                </div>
+                <div class="footer-widget__explore-list-box">
+                  <ul class="footer-widget__explore-list list-unstyled">
+                    <li><a href="about.html">Who We Are
+
+                      </a></li>
+                    <li><a href="our-impact.html">Our Impact</a></li>
+                    <li><a href="heritage.html">Our Heritage
+
+                      </a></li>
+                    <!-- <li><a href="products.html">New Products</a></li> -->
+                    <li><a href="careers.html">Careers
+
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+              <div class="footer-widget__column footer-widget__contact">
+                <div class="footer-widget__title-box">
+                  <h3 class="footer-widget__title">CONTACT US</h3>
+                </div>
+                <p class="footer-widget__contact-text">
+               APMC Market 2, Phase 2, Turbhe, Navi Mumbai - 400705.
+                </p>
+                <ul class="list-unstyled footer-widget__contact-list">
+                  <li>
+                    <div class="text">
+                      <p>
+                        <a href="tel:928800688960">+91 7738862852</a>
+                      </p>
+
+                    </div>
+                  </li>
+                  <li>
+                    <div class="text">
+                      <p>
+                        <a href="mailto:info@example.com "> india.info@haprosgroup.com</a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="site-footer__bottom-inner">
+                <div class="site-footer__bottom-left">
+                  <p class="site-footer__bottom-text">
+                    ©️ 2024 Hapros Global. All rights reserved. Developed and
+                    managed by
+                    <a href="https://cleverstudio.in/" target="_blank">Clever Studio</a>
+                  </p>
+                </div>
+                <div class="site-footer__bottom-right">
+                  <ul class="list-unstyled site-footer__bottom-menu">
+                    <li><a href="about.html">Terms & Conditions</a></li>
+                    <li><span>/</span></li>
+                    <li><a href="about.html">Privacy Policy</a></li>
+                    <li><span>/</span></li>
+                    <li><a href="about.html">Privacy Policy</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="site-footer__bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="site-footer__bottom-inner">
-                  <div class="site-footer__bottom-left">
-                    <p class="site-footer__bottom-text">
-                      ©️ 2024 Hapros Global. All rights reserved. Developed and
-                      managed by
-                      <a href="https://cleverstudio.in/" target="_blank">Clever Studio</a>
-                    </p>
-                  </div>
-                  <div class="site-footer__bottom-right">
-                    <ul class="list-unstyled site-footer__bottom-menu">
-                      <li><a href="about.html">Terms & Conditions</a></li>
-                      <li><span>/</span></li>
-                      <li><a href="about.html">Privacy Policy</a></li>
-                      <li><span>/</span></li>
-                      <li><a href="about.html">Privacy Policy</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
       <!--Site Footer End-->
     </div>
     <!-- /.page-wrapper -->

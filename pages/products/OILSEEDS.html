@@ -124,67 +124,89 @@
     <div class="custom-cursor__cursor-two"></div>
 
     <div class="preloader">
-      <div class="preloader__image"></div>
+      <div class="txt-loading">
+        <div class="spinner"></div>
+
+        <style>
+        .spinner {
+           width: 56px;
+           height: 56px;
+           border-radius: 50%;
+           background: radial-gradient(farthest-side,rgb(3, 228, 3) 94%,#0000) top/9px 9px no-repeat,
+                  conic-gradient(#0000 30%,rgb(3, 228, 3));
+           -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+           animation: spinner-c7wet2 1s infinite linear;
+        }
+        
+        @keyframes spinner-c7wet2 {
+           100% {
+              transform: rotate(1turn);
+           }
+        }
+        </style>
+   
     </div>
+  </div>
     <!-- /.preloader -->
 
     <div class="page-wrapper">
       <header class="main-header-two" style="width: 100%">
         <nav class="main-menu main-menu-two">
-          <div class="main-menu-two__wrapper" style="background-color: #418e7f">
+          <div class="main-menu-two__wrapper" style="background-color: #00000011">
             <div class="container">
               <div class="main-menu-two__wrapper-inner">
-                <div class="main-header-two__social">
-                  <div class="main-header-two__logo">
-                    <a href="../../index.html"><img style="width: 10rem" src="../../assets/images/Hapros white and yellow.png" alt="" /></a>
-                  </div>
+                <div class="main-header-two__logo">
+                  <a href="../../index.html">
+                    <img src="../../assets/images/Hapros white and yellow.png" alt="Logo" />
+                  </a>
                 </div>
+  
+  
+  
+                <!-- Mobile Navigation Toggle -->
+  
+                <!-- Navigation Menu -->
                 <div class="main-menu-two__main-menu-box">
-                  <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                   <ul class="main-menu__list">
-                    <li class="current">
-                      <a href="../../index.html">Home </a>
+                    <li class="">
+                      <a href="../../index.html">Home</a>
                     </li>
                     <li class="dropdown">
-                      <a href="../../about.html">About Us</a>
+                      <a href="about.html">About Us</a>
                       <ul class="sub-menu">
-                        <li>
-                          <a href="../../about.html">Overview</a>
-                        </li>
-                        <li>
-                          <a href="../../services.html">Services</a>
-                        </li>
+                        <li><a href="./about.html">Overview</a></li>
+                        <li><a href="./services.html">Services</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown">
-                      <a href="#">Products</a>
+                    <li class="dropdown nocurrent">
+                      <a class="nocurrent" href="../pages/products/beans-pulses.html">Products</a>
                       <ul class="sub-menu">
                         <li>
-                          <a href="./pages/products/beans-pulses.html">BEANS & PULSES</a>
+                          <a href="">BEANS & PULSES</a>
                         </li>
                         <li>
-                          <a href="">CEREALS & FLOUR</a>
+                          <a href="./CEREALS-FLOUR.html">CEREALS & FLOUR</a>
                         </li>
                         <li>
-                          <a href="./pages/products/SPICES.html">SPICES</a>
+                          <a href="./SPICES.html">SPICES</a>
                         </li>
                         <li>
-                          <a href="./pages/products/RICE.html">RICE</a>
+                          <a href="./SPICES.html">RICE</a>
                         </li>
                         <li>
-                          <a href="./pages/products/DRIED-FRUITS.html">DRIED FRUITS</a>
+                          <a href="./DRIED-FRUITS.html">DRIED FRUITS</a>
                         </li>
                         <li>
-                          <a href="./pages/products/OILSEEDS.html">OILSEEDS</a>
+                          <a href="./OILSEEDS.html">OILSEEDS</a>
                         </li>
                         <li>
-                          <a href="">HERBS</a>
+                          <a href="./HERBS.html">HERBS</a>
                         </li>
                         <li>
-                          <a href="./pages/products/SUPERFOODS.html">SUPERFOODS</a>
+                          <a href="./SUPERFOODS.html">SUPERFOODS</a>
                         </li>
                         <li>
-                          <a href="./pages/products/SWEETNERS.html">SWEETNERS</a>
+                          <a href="./SWEETNERS.html">SWEETNERS</a>
                         </li>
                       </ul>
                     </li>
@@ -195,16 +217,19 @@
                       <a href="../../our-impact.html">Our Impact</a>
                     </li>
                     <li>
-                      <a href="form.html">Contact</a>
+                      <a href="../../form.html">Contact</a>
                     </li>
                   </ul>
                 </div>
+                <div> <a href="#" class="mobile-nav__toggler">
+                    <span class="hamburger-icon"></span>
+                  </a></div>
+  
               </div>
             </div>
           </div>
         </nav>
       </header>
-  
 
       <div class="stricky-header stricked-menu main-menu">
         <div class="sticky-header__content"></div>
@@ -548,23 +573,7 @@
                 </div>
   
               </div>
-              <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                <div class="footer-widget__column footer-widget__explore">
-                  <div class="footer-widget__title-box">
-                    <h3 class="footer-widget__title">QUALITY & TERMS</h3>
-                  </div>
-                  <div class="footer-widget__explore-list-box">
-                    <ul class="footer-widget__explore-list list-unstyled">
-                      <li><a href="../../about.html">Quality</a></li>
-                      <li><a href="../../services.html">Certificates</a></li>
-                      <li><a href="../../pricing.html">Terms & Conditions</a></li>
-                      <!-- <li><a href="products.html">New Products</a></li> -->
-                      <li><a href="../../contact.html">Statements & Policies</a></li>
-                    </ul>
-                  </div>
-                </div>
-  
-              </div>
+             
               <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                 <div class="footer-widget__column footer-widget__explore">
                   <div class="footer-widget__title-box">

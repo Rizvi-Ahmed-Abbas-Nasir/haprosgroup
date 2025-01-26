@@ -56,8 +56,29 @@
   <div class="custom-cursor__cursor-two"></div>
 
   <div class="preloader">
-    <div class="preloader__image"></div>
+    <div class="txt-loading">
+      <div class="spinner"></div>
+
+      <style>
+      .spinner {
+         width: 56px;
+         height: 56px;
+         border-radius: 50%;
+         background: radial-gradient(farthest-side,rgb(3, 228, 3) 94%,#0000) top/9px 9px no-repeat,
+                conic-gradient(#0000 30%,rgb(3, 228, 3));
+         -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+         animation: spinner-c7wet2 1s infinite linear;
+      }
+      
+      @keyframes spinner-c7wet2 {
+         100% {
+            transform: rotate(1turn);
+         }
+      }
+      </style>
+ 
   </div>
+</div>
   <!-- /.preloader -->
 
   <div class="page-wrapper">
@@ -373,23 +394,7 @@
               </div>
 
             </div>
-            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-              <div class="footer-widget__column footer-widget__explore">
-                <div class="footer-widget__title-box">
-                  <h3 class="footer-widget__title">QUALITY & TERMS</h3>
-                </div>
-                <div class="footer-widget__explore-list-box">
-                  <ul class="footer-widget__explore-list list-unstyled">
-                    <li><a href="../../about.html">Quality</a></li>
-                    <li><a href="../../services.html">Certificates</a></li>
-                    <li><a href="../../pricing.html">Terms & Conditions</a></li>
-                    <!-- <li><a href="products.html">New Products</a></li> -->
-                    <li><a href="../../contact.html">Statements & Policies</a></li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
+           
             <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
               <div class="footer-widget__column footer-widget__explore">
                 <div class="footer-widget__title-box">
